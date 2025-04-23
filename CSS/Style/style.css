@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
+* {
+  font-family: "Roboto Mono", monospace;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 0 -4px 10px 0 #2b5aa4;
+}
+
+main {
+  margin: 20px 50px 0 50px;
+}
+
+h2 {
+  margin-bottom: 16px;
+}
+
+input,
+select,
+textarea:focus-visible {
+  outline-color: #2b5aa4; /* Outline color for focused elements */
+}
+
+.form input,
+select,
+textarea {
+  border: 1px solid;
+  border-radius: 4px;
+  padding: 6px;
+  margin: 4px;
+  width: 90%;
+}
+
+#questionLabel {
+  text-align: justify;
+}
+
+#country {
+  align-self: center;
+}
+
+.container-bg {
+  background-image: url(../Image/Background_Japan.jpeg);
+  background-size: cover;
+  height: 35vh;
+}
+
+.color-primary {
+  color: #2b5aa4;
+}
+
+.main-question {
+  text-align: center;
+  border: 2px dashed #2b5aa4;
+  padding: 20px;
+}
+
+.form-section {
+  margin: 20px 0;
+}
+
+.form-section h2 {
+  font-size: 16px;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.form input[type="radio"] {
+  width: 20px;
+}
+
+.form textarea {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.form-item {
+  margin: 16px 0;
+  flex: 50%;
+}
+
+.form-item label {
+  display: block;
+}
+.form label.radio-btn {
+  display: inline;
+}
+
+.btn {
+  display: block;
+  justify-self: end;
+  padding: 14px 30px;
+  background-color: #2b5aa4;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 20px;
+  box-shadow: -2px 3px 4px black;
+}
+
+.btn:hover {
+  border: 2px solid #1e3a7b;
+}
+
+.footer {
+  font-size: 8px;
+  font-weight: normal;
+  background-color: black;
+  color: #fff;
+  padding: 6px;
+  text-align: center;
+  align-content: center;
+}
+
+.form-item span.error-message,
+.agreement span.error-message {
+  display: none;
+}
+
+.form-item.error .error-message,
+.agreement.error .error-message {
+  display: block;
+  color: red;
+  font-size: 12px;
+  margin-top: 4px;
+  margin-left: 10px;
+}
+
+.form-item.error input,
+.form-item.error select,
+.form-item.error textarea {
+  border-color: red;
+  outline-color: red;
+}
+
+@media only screen and (max-width: 600px) {
+  .container-bg {
+    height: 25vh;
+  }
+
+  main {
+    margin: 20px 16px 0 16px;
+  }
+
+  .form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .form input,
+  select {
+    width: 100%;
+    margin: 0;
+  }
+
+  .agreement {
+    text-align: center;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .main-question p {
+    text-align: justify;
+  }
+}
