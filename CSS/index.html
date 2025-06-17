@@ -1,95 +1,102 @@
 <!DOCTYPE html>
 <html lang="pt">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>Promoção</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Na nossa pagina você participa de uma super promoção de viagem para a Ásia" />
-    <meta id="keywords" name="keywords" content="promoção, viagem, Ásia, passagens, hospedagem" />
-    <link href="./Icon/favicon.ico" rel="icon" type="image/x-icon" />
-    <link rel="stylesheet" href="./Style/style.css" />
-  </head>
 
-  <body>
-    <header>
-      <div class="container-bg"></div>
-      <h1>Cadastro <span class="color-primary">PROMO</span></h1>
-    </header>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Promoção</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Na nossa pagina você participa de uma super promoção de viagem para a Ásia" />
+  <meta id="keywords" name="keywords" content="promoção, viagem, Ásia, passagens, hospedagem" />
+  <link href="./Icon/favicon.ico" rel="icon" type="image/x-icon" />
+  <link rel="stylesheet" href="./Style/style.css" />
+  <script src="../JavaScript/scriptForCSS.js" defer></script>
+</head>
 
-    <main>
-      <section class="main-question">
-        <h2>Quer viajar pela <span class="color-primary">Ásia</span> de graça?</h2>
-        <p>Preencha o formulário e responda a pergunta do final de um jeito criativo. A resposta mais criativa irá ganhar passagens e hospedagens em <span class="color-primary">CINCO</span> países diferentes!</p>
-      </section>
+<body>
+  <header>
+    <div class="container-bg"></div>
+    <h1>Cadastro <span class="color-primary">PROMO</span></h1>
+  </header>
 
-      <section class="form-section">
-        <h2>Preencha com seus dados</h2>
-        <form action="http://localhost:52330/Project/Index.html#" class="form">
-          <div class="form-item">
-            <label for="firstName">Nome</label>
-            <input type="text" id="firstName" name="firstName" placeholder="Marcio" />
-            <span class="error-message">Aqui vai uma mensagem de erro!</span>
-          </div>
+  <main>
+    <section class="main-question">
+      <h2>Quer viajar pela <span class="color-primary">Ásia</span> de graça?</h2>
+      <p>Preencha o formulário e responda a pergunta do final de um jeito criativo. A resposta mais criativa irá ganhar
+        passagens e hospedagens em <span class="color-primary">CINCO</span> países diferentes!</p>
+    </section>
 
-          <div class="form-item">
-            <label for="lastName">Sobrenome</label>
-            <input type="text" id="lastName" name="lastName" placeholder="Oliveira" />
-            <span class="error-message">Aqui vai uma mensagem de erro!</span>
-          </div>
-
-          <div class="form-item">
-            <label for="email">E-mail</label>
-            <input type="email" id="email" name="email" placeholder="meu_email_aqui@email.com" />
-            <span class="error-message">Aqui vai uma mensagem de erro!</span>
-          </div>
-
-          <div class="form-item">
-            <label for="birthday">Data de nascimento</label>
-            <input type="date" id="birthday" name="birthday" required />
-            <span class="error-message">Aqui vai uma mensagem de erro!</span>
-          </div>
-
-          <div class="form-item">
-            <label for="knewQuestion">Como ficou sabendo da <span class="color-primary">PROMOÇÂO</span>?</label>
-            <select name="knewQuestion" id="knewQuestion" required>
-              <option value="">Selecione...</option>
-              <option value="instagram">Instagram</option>
-              <option value="facebook">Facebook</option>
-              <option value="twitter">Twitter</option>
-              <option value="google">Google</option>
-              <option value="friend">Amigo</option>
-            </select>
-            <span class="error-message">Aqui vai uma mensagem de erro!</span>
-          </div>
-
-          <div id="country" class="form-item">
-            <label class="radio-btn"><span class="color-primary">País</span></label>
-            <input type="radio" name="country" id="brazil" value="brazil" required />
-            <label for="brazil" class="radio-btn">Brasil</label>
-            <input type="radio" name="country" id="portugal" value="portugal" required />
-            <label for="portugal" class="radio-btn">Portugal</label>
-            <span class="error-message">Aqui vai uma mensagem de erro!</span>
-          </div>
-
-          <div class="form-item">
-            <label id="questionLabel" for="question">
-              Levando em consideração que a massa do Sol é de <span class="color-primary">aproximadamente</span> 2 x 10^30 kg e a massa da Terra é de aproximadamente 6 x 10^24 kg (cerca de <span class="color-primary">330.00</span> vezes a massa da Terra). Quantas bolas de basquete cabem em um campo
-              de futebol?
-            </label>
-            <textarea id="question" name="question" minlength="5" maxlength="500" placeholder="Escreva sua resposta aqui..." rows="8" required></textarea>
-            <span class="error-message">Aqui vai uma mensagem de erro!</span>
-          </div>
-        </form>
-        <div class="agreement">
-          <input type="checkbox" id="agree" name="agreement" required />
-          <label for="agree">Aceito os <span class="color-primary">termos e condições </span>da promoção</label>
+    <section class="form-section">
+      <h2>Preencha com seus dados</h2>
+      <form action="http://localhost:52330/Project/Index.html#" class="form">
+        <div class="form-item">
+          <label for="firstName">Nome</label>
+          <input type="text" id="firstName" name="firstName" placeholder="Marcio" />
           <span class="error-message">Aqui vai uma mensagem de erro!</span>
         </div>
-        <button class="btn" id="btnSubmit" type="submit">Cadastrar</button>
-      </section>
-    </main>
-    <footer class="footer">
-      <h2>Todos os direitos reservados a linha <span class="color-primary">PROMO</span></h2>
-    </footer>
-  </body>
+
+        <div class="form-item">
+          <label for="lastName">Sobrenome</label>
+          <input type="text" id="lastName" name="lastName" placeholder="Oliveira" />
+          <span class="error-message">Aqui vai uma mensagem de erro!</span>
+        </div>
+
+        <div class="form-item">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="meu_email_aqui@email.com" />
+          <span class="error-message">Aqui vai uma mensagem de erro!</span>
+        </div>
+
+        <div class="form-item">
+          <label for="birthday">Data de nascimento</label>
+          <input type="date" id="birthday" name="birthday" required />
+          <span class="error-message">Aqui vai uma mensagem de erro!</span>
+        </div>
+
+        <div class="form-item">
+          <label for="knewQuestion">Como ficou sabendo da <span class="color-primary">PROMOÇÂO</span>?</label>
+          <select name="knewQuestion" id="knewQuestion" required>
+            <option value="">Selecione...</option>
+            <option value="instagram">Instagram</option>
+            <option value="facebook">Facebook</option>
+            <option value="twitter">Twitter</option>
+            <option value="google">Google</option>
+            <option value="friend">Amigo</option>
+          </select>
+          <span class="error-message">Aqui vai uma mensagem de erro!</span>
+        </div>
+
+        <div id="country" class="form-item">
+          <label class="radio-btn"><span class="color-primary">País</span></label>
+          <input type="radio" name="country" id="brazil" value="brazil" required />
+          <label for="brazil" class="radio-btn">Brasil</label>
+          <input type="radio" name="country" id="portugal" value="portugal" required />
+          <label for="portugal" class="radio-btn">Portugal</label>
+          <span class="error-message">Aqui vai uma mensagem de erro!</span>
+        </div>
+
+        <div class="form-item">
+          <label id="questionLabel" for="question">
+            Levando em consideração que a massa do Sol é de <span class="color-primary">aproximadamente</span> 2 x 10^30
+            kg e a massa da Terra é de aproximadamente 6 x 10^24 kg (cerca de <span class="color-primary">330.00</span>
+            vezes a massa da Terra). Quantas bolas de basquete cabem em um campo
+            de futebol?
+          </label>
+          <textarea id="question" name="question" minlength="5" maxlength="500"
+            placeholder="Escreva sua resposta aqui..." rows="8" required></textarea>
+          <span class="error-message">Aqui vai uma mensagem de erro!</span>
+        </div>
+      </form>
+      <div class="agreement">
+        <input type="checkbox" id="agreement" name="agreement" required />
+        <label for="agree">Aceito os <span class="color-primary">termos e condições </span>da promoção</label>
+        <span class="error-message">Aqui vai uma mensagem de erro!</span>
+      </div>
+      <button class="btn" id="btnSubmit" type="submit">Cadastrar</button>
+    </section>
+  </main>
+  <footer class="footer">
+    <h2>Todos os direitos reservados a linha <span class="color-primary">PROMO</span></h2>
+  </footer>
+</body>
+
 </html>

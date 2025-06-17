@@ -29,5 +29,10 @@ console.log("Valor inicial de lastName:", lastName);
 lastName = "Pérez";
 console.log("Valor reatribuído de lastName:", lastName);
 
+console.log(`${firstName} ${lastName}`); //este codigo chama template de string permite concatenar
+
 const PI = 3.14;
 console.log("Valor de PI:", PI);
+
+let namePrompt = prompt("Digite o seu nome"); //cria uma variavel pra guardar o texto que for digitado no Prompt
+alert(`Olá ${namePrompt}`); //apresenta o alert juntamente do nome que foi adicionado no prompt
