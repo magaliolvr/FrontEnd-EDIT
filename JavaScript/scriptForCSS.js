@@ -35,6 +35,10 @@ function checkFirstNameField() {
   }
 }
 
+firstName.addEventListener("blur", () => {
+  checkFirstNameField();
+});
+
 function checkLastNameField() {
   if (lastName.value.trim() === "") {
     //o Trim serve pra retirar espaços vazios, caso o usuario so acrescente espaços no input
@@ -44,6 +48,10 @@ function checkLastNameField() {
     clearErrorMessage(lastName);
   }
 }
+
+lastName.addEventListener("blur", () => {
+  checkLastNameField();
+});
 
 function checkEmailField() {
   if (email.value.trim() === "") {
@@ -59,6 +67,10 @@ function checkEmailField() {
   }
 }
 
+email.addEventListener("blur", () => {
+  checkEmailField();
+});
+
 function checkBirthdayField() {
   if (birthday.value.trim() === "") {
     //o Trim serve pra retirar espaços vazios, caso o usuario so acrescente espaços no input
@@ -69,6 +81,10 @@ function checkBirthdayField() {
   }
 }
 
+birthday.addEventListener("blur", () => {
+  checkBirthdayField();
+});
+
 function checkKnewQuestionField() {
   if (knewQuestion.value.trim() === "") {
     //o Trim serve pra retirar espaços vazios, caso o usuario so acrescente espaços no input
@@ -78,6 +94,10 @@ function checkKnewQuestionField() {
     clearErrorMessage(knewQuestion);
   }
 }
+
+knewQuestion.addEventListener("blur", () => {
+  checkKnewQuestionField();
+});
 
 function checkCountryField() {
   const hasCountry = brazil.checked || portugal.checked; // o operador logico || (diferente) pode validar varios items, mas se 1 deles estiver a true o resultado retornara true, diferente do && que se forem diferentes os resultados ja retorna false
@@ -90,6 +110,14 @@ function checkCountryField() {
   }
 }
 
+portugal.addEventListener("click", () => {
+  checkCountryField();
+});
+
+brazil.addEventListener("click", () => {
+  checkCountryField();
+});
+
 function checkQuestionField() {
   if (question.value.trim() === "") {
     isFormValid = false;
@@ -99,6 +127,10 @@ function checkQuestionField() {
   }
 }
 
+question.addEventListener("blur", () => {
+  checkQuestionField();
+});
+
 function checkAgreementField() {
   if (!agree.checked) {
     isFormValid = false;
@@ -107,6 +139,10 @@ function checkAgreementField() {
     clearErrorMessage(agree);
   }
 }
+
+agree.addEventListener("click", () => {
+  checkAgreementField();
+});
 
 function addMessageError(input, message) {
   const formItem = input.parentElement;
